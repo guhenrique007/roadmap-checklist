@@ -1,7 +1,10 @@
 # Roadmap Checklist
 I made this project to serve as a checklist for the [Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap).
+
 The data is saved on browser local storage, you can acess the production version [here]() (Coming soon) 
 
+## Project Details
+- Vue.Js
 
 ## Project setup
 ```
@@ -22,6 +25,3 @@ yarn build
 ```
 yarn lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
