@@ -7,6 +7,7 @@ The data is saved on browser local storage, you can acess the production version
 - Vue.Js
 
 ## Project setup
+### Install Dependecies
 ```
 yarn install
 ```
