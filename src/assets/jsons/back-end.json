@@ -1,0 +1,727 @@
+[
+  {
+    "name": "Internet",
+    "items": [
+      {
+        "title": "What is HTTP?",
+        "done": true,
+        "priority": "main"
+      },
+      {
+        "title": "DNS and how it works?",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "What is Domain Name?",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "What is hosting?",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "How does the internet work?",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Browsers and how they work?",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Basic Frontend Knowledge",
+    "items": [
+      {
+        "title": "HTML",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "CSS",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "JavaScript",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "OS and General Knowledge",
+    "items": [
+      {
+        "title": "Terminal Usage",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "How OSs work in General",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Process Management",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Threads and Concurrency",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Basic Terminal Commands",
+        "description": "grep, awk, sed, lsof, curl, wget, tail, head, less, find, ssh, kill",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Memory Management",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Interprocess Communication",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "I/O Management",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "POSIX Basics",
+        "description": "stdin, stdout, stderr, pipes",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Basic Networking Concepts",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Learn a Language",
+    "description": "Make sure to learn it's quirks. Core detail about it's runtime e.g. concurrency, memory model, etc.",
+    "items": [
+      {
+        "title": "Javascript",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Go",
+        "done": false,
+        "priority": "optional"
+      },
+      {
+        "title": "Python",
+        "done": false,
+        "priority": "optional"
+      },
+      {
+        "title": "Java",
+        "done": false,
+        "priority": "optional"
+      },
+      {
+        "title": "Ruby",
+        "done": false,
+        "priority": "optional"
+      },
+      {
+        "title": "C#",
+        "done": false,
+        "priority": "optional"
+      },
+      {
+        "title": "PHP",
+        "done": false,
+        "priority": "optional"
+      }
+    ]
+  },
+  {
+    "name": "Version Control Systems",
+    "description": "What are they and why you should use one",
+    "items": []
+  },
+  {
+    "name": "Basic Usage of Git",
+    "items": []
+  },
+  {
+    "name": "Repo hosting services",
+    "description": "Create account and Learn to use GitHub",
+    "items": [
+      {
+        "title": "GitHub",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Bitbucket",
+        "done": false,
+        "priority": "optional"
+      },
+      {
+        "title": "GitLab",
+        "done": false,
+        "priority": "optional"
+      }
+    ]
+  },
+  {
+    "name": "Relational Databases",
+    "items": [
+      {
+        "title": "PostgreSQL",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "MySQL",
+        "done": false,
+        "priority": "optional"
+      },
+      {
+        "title": "MySQL",
+        "done": false,
+        "priority": "optional"
+      },
+      {
+        "title": "MariaDB",
+        "done": false,
+        "priority": "optional"
+      },
+      {
+        "title": "MS SQL",
+        "done": false,
+        "priority": "optional"
+      },
+      {
+        "title": "Oracle",
+        "done": false,
+        "priority": "optional"
+      }
+    ]
+  },
+  {
+    "name": "More about Databases",
+    "items": [
+      {
+        "title": "ORMs",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "ACID",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Transactions",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "N+1 Problem",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Data Replication",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Sharding Strategies",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "CAP Theorem",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "NoSQL Databases",
+    "items": [
+      {
+        "title": "MongoDB",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "RethinkDB",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "CouchDB",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "DynamoDB",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Learn about APIs",
+    "items": [
+      {
+        "title": "HATEOAS",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Open API Spec and Swagger",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Authentication",
+        "done": false,
+        "priority": "main",
+        "items" : [
+          {
+            "title": "Cookie Based",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "OAuth",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Basic Authentication",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Token Authentication",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "JWT",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "OpenID",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "SAML",
+            "done": false,
+            "priority": "main"
+          }
+        ]
+      },
+      {
+        "title": "REST",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "JSON APIs",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "SOAP",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Caching",
+    "items": [
+      {
+        "title": "CDN",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Client Side",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Server Side",
+        "done": false,
+        "priority": "main",
+        "items": [
+          {
+            "title": "Memcached",
+            "done": false,
+            "priority": "optional"
+          },
+          {
+            "title": "Redis",
+            "done": false,
+            "priority": "main"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Web Security Knowledge",
+    "items": [
+      {
+        "title": "HTTPS",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "CORS",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "OWASP Security Risks",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Content Security Policy",
+        "done": false,
+        "priority": "optional"
+      },
+      {
+        "title": "SSL/TLS",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Web Security Knowledgment (Hashing Algorithms)",
+    "items": [
+      {
+        "title": "MD5 and why not to use it",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "SHA Family",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "scrypt",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "bcrypt",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Testing",
+    "items": [
+      {
+        "title": "Integration Testing",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Unit Testing",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Functional Testing",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "CI/CD",
+    "items": [
+      {
+        "title": "CI/CD",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Design and Development Principles",
+    "items": [
+      {
+        "title": "GOF Design Patterns",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Domain Driven Design (DDD)",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Test Driven Development",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "SOLID",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "KISS",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "YAGNI",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "DRY",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Architetural Patterns",
+    "items": [
+      {
+        "title": "Monolitics Apps",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Microservices",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "SOA",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "CQRS and Event Sourcing",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Serverless",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Search Engines",
+    "items": [
+      {
+        "title": "Elasticsearch",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Solr",
+        "done": false,
+        "priority": "optional"
+      }
+    ]
+  },
+  {
+    "name": "Message Brokers",
+    "items": [
+      {
+        "title": "RabbitMQ",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Kafka",
+        "done": false,
+        "priority": "optional"
+      }
+    ]
+  },
+  {
+    "name": "Containerization vs Virtualization",
+    "items": [
+      {
+        "title": "Docker",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "rkt",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "LXC",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "GraphQL",
+    "items": [
+      {
+        "title": "Apollo",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Relay Modern",
+        "done": false,
+        "priority": "optional"
+      }
+    ]
+  },
+  {
+    "name": "Graph Database",
+    "items": [
+      {
+        "title": "Neo4j",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "WebSockets",
+    "items": [
+      {
+        "title": "WebSockets",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Web Servers",
+    "items": [
+      {
+        "title": "Nginx",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Apache",
+        "done": false,
+        "priority": "optional"
+      },
+      {
+        "title": "Caddy",
+        "done": false,
+        "priority": "optional"
+      },
+      {
+        "title": "MS IIS",
+        "done": false,
+        "priority": "optional"
+      }
+    ]
+  },
+  {
+    "name": "Building for Scale",
+    "description": "General topics that you should learn and care about for the sustainability of the product",
+    "items": [
+      {
+        "title": "Migration Strategies",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Horizontal vs Vertical Scaling",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Building Observability in mind",
+        "description": "Metrics logging and other observable items that could help you in debugging and solving the issues when things go wrong",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Mitigation Strategies",
+        "done": false,
+        "priority": "main",
+        "items": [
+          {
+            "title": "Graceful Degradation",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Throttling",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Backpressure",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Loadshifting",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Circuit Breaker",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Instrumentation",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Monitoring",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Telemetry",
+            "done": false,
+            "priority": "main"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Keep Learning :)",
+    "items": []
+  }
+]
