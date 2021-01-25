@@ -8,7 +8,7 @@ The data is saved on browser local storage, you can acess the production version
 
 ## Contribuition
 - Open a pull request with improvements
-- Some suggestions improvements
+- Some suggestions improvements:
   - Styling
   - Allow create notes to roadmap items
   - new roadmap JSONs
