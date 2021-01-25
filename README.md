@@ -16,20 +16,15 @@ The data is saved on browser local storage, you can acess the production version
 ## Project setup
 ### Install Dependecies
 ```
-yarn install
+yarn | npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+yarn serve | npm run serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+yarn build | npm run build
 ```
