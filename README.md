@@ -6,12 +6,14 @@ The data is saved on browser local storage, you can acess the production version
 ## Project Details
 - Vue.Js
 
-## Suggestions for pull requests
-- Styling
-- Allow create notes to roadmap items
-- new roadmap JSONs
-- Allow create new roadmaps
-- Refactors
+## Contribuition
+- Open a pull request with improvements
+- Some suggestions improvements
+  - Styling
+  - Allow create notes to roadmap items
+  - new roadmap JSONs
+  - Allow create new roadmaps
+  - Refactors
 
 ## Project setup
 ### Install Dependecies
