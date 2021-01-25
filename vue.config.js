@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '/roadmap/src/'
+  publicPath: '/roadmap/'
 }
