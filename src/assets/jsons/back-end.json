@@ -4,7 +4,7 @@
     "items": [
       {
         "title": "What is HTTP?",
-        "done": true,
+        "done": false,
         "priority": "main"
       },
       {
