@@ -11,6 +11,7 @@ The data is saved on browser local storage, you can acess the production version
 - Allow create notes to roadmap items
 - new roadmap JSONs
 - Allow create new roadmaps
+- Refactors
 
 ## Project setup
 ### Install Dependecies
