@@ -1,7 +1,7 @@
 # Roadmap Checklist
 I made this project to serve as a checklist for the [Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap).
 
-The data is saved on browser local storage, you can acess the production version [here]() (Coming soon) 
+The data is saved on browser local storage, you can acess the production version [here](https://guhenrique007.github.io/roadmap-checklist/) 
 
 ## Project Details
 - Vue.Js
@@ -16,20 +16,15 @@ The data is saved on browser local storage, you can acess the production version
 ## Project setup
 ### Install Dependecies
 ```
-yarn install
+yarn | npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+yarn serve | npm run serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+yarn build | npm run build
 ```
