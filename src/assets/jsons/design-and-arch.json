@@ -1,0 +1,512 @@
+[
+  {
+    "name": "Clean Code",
+    "items": [
+      {
+        "title": "Be consistent",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Prefer meaningful names over comments",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Identation and style",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Keep methods, classes, files small",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Be consistent",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Refactor switch statements to classes",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Don't pass booleans",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Use the correct constructs",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Don't pass null",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Command Query Separation",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Organize code by the actor it belongs to",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Keep framework code distant",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Test should be fast, independent and repeatable",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Refactor often",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Use meaningful names",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Programming Paradigms",
+    "items": [
+      {
+        "title": "Structured Programming",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Functional Programming",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Object-oriented Programming",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Object-oriented Programming",
+    "items": [
+      {
+        "title":"OOP (4 Primary Principles)",
+        "items": [      
+          {
+            "title": "Inheritance",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Polymorphism",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Abstraction",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Encapsulation",
+            "done": false,
+            "priority": "main"
+          }
+        ]
+      },
+      {
+        "title":"Paradigm Features",
+        "items": [      
+          {
+            "title": "Abstract classes",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Concrete classes",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Scope / visibility",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Interfaces",
+            "done": false,
+            "priority": "main"
+          }
+        ]
+      },
+      {
+        "title":"Model-Driven Design",
+        "items": [      
+          {
+            "title": "Understand domain models",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Understand anemic models",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Layered architectures",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Domain language",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Class invariants",
+            "done": false,
+            "priority": "main"
+          }
+
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Design Principles",
+    "items": [
+      {
+        "title": "Composition over inheritance",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Encapsulate what varies",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Program agains abstractions",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Hollywood principle",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "SOLID",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "DRY",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "YAGNI",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Design Patterns",
+    "items": [
+      {
+        "title":"Creational",
+        "items": [      
+          {
+            "title": "Singleton",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Factories",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Prototypes",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Builder",
+            "done": false,
+            "priority": "main"
+          }
+        ]
+      },
+      {
+        "title":"Structural",
+        "items": [      
+          {
+            "title": "Adapter",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Bridge",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Decorator",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Composite",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Proxy",
+            "done": false,
+            "priority": "main"
+          }
+        ]
+      },
+      {
+        "title":"Model-Driven Design",
+        "items": [      
+          {
+            "title": "Understand domain models",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Understand anemic models",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Layered architectures",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Domain language",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Class invariants",
+            "done": false,
+            "priority": "main"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Architetural Principles",
+    "items": [
+      {
+        "title": "Policy vs. detail",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Coupling & cohesion",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Component principles",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Boundaries",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Archhitectural Styles",
+    "items": [
+      {
+        "title":"Structural",
+        "items": [      
+          {
+            "title": "Component-based",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Monolithic",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Layered",
+            "done": false,
+            "priority": "main"
+          }
+        ]
+      },
+      {
+        "title":"Messaging",
+        "items": [      
+          {
+            "title": "Event-Driven",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Publish-Subsribe",
+            "done": false,
+            "priority": "main"
+          }
+        ]
+      },
+      {
+        "title":"Distributed",
+        "items": [      
+          {
+            "title": "Client-Server",
+            "done": false,
+            "priority": "main"
+          },
+          {
+            "title": "Peer-to-peer",
+            "done": false,
+            "priority": "main"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Architectural Patterns",
+    "items": [
+      {
+        "title": "Domain-Driven Design",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Model-View Controller",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Microservices",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Blackboard pattern",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Microkernel",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Serveless Architecture",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "CQRS",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Event Sourcing",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Message Queues / Streams",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Enterprise Patterns",
+    "items": [
+      {
+        "title": "DTOs",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Identify Maps",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Use Cases",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Repositories",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Mappers",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Transaction Script",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Commands / Queries",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Value Objects",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Domain Models",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "Entities",
+        "done": false,
+        "priority": "main"
+      },
+      {
+        "title": "ORMs",
+        "done": false,
+        "priority": "main"
+      }
+    ]
+  },
+  {
+    "name": "Keep Learning :)",
+    "items": []
+  }
+]

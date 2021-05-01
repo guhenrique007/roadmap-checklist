@@ -6,6 +6,7 @@
       <a href="?type=back-end">Back End</a>
       <a href="?type=front-end">Front End</a>
       <a href="?type=dev-ops">Dev Ops</a>
+      <a href="?type=design-and-arch">Design & Architecture</a>
     </div>
     <div class="roadmap" v-for="(step, index) in roadmap" :key="index">
       <Card :step="step" :listItems="step.items" />
@@ -19,11 +20,13 @@
   import backEndRoadmap from './assets/jsons/back-end.json'
   import frontEndRoadmap from './assets/jsons/front-end.json'
   import devOpsRoadmap from './assets/jsons/dev-ops.json'
+  import designAndArchRoadmap from './assets/jsons/design-and-arch.json'
 
   const roadmapList = {
     'back-end': backEndRoadmap,
     'front-end': frontEndRoadmap,
-    'dev-ops': devOpsRoadmap
+    'dev-ops': devOpsRoadmap,
+    'design-and-arch': designAndArchRoadmap
   }
   console.log(roadmapList);
 
@@ -48,7 +51,6 @@
         const type = urlParams.get('type');
 
         if(type) {
-          console.log(urlParams.get('type'));
           const roadmapStorage = localStorage.getItem(`${type}-roadmap`);
           
           if(!roadmapStorage) {
@@ -59,7 +61,6 @@
           }
           
           this.roadmapType = type;
-          console.log(this.roadmap);
         }
       }
     },
