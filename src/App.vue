@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <h1>ROADMAP</h1>
+    <h1>DEV ROADMAP</h1>
     <div id="link-roadmap-type">
       <a href="?type=back-end">Back End</a>
       <a href="?type=front-end">Front End</a>
