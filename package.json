@@ -9,8 +9,10 @@
     "deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
+    "bootstrap": "^5.0.1",
+    "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11",
+    "vue": "^2.6.14",
     "vue-cli-ghpages": "^1.0.0"
   },
   "devDependencies": {
@@ -21,7 +23,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "execa": "latest",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
     "root": true,
