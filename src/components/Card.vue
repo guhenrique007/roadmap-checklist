@@ -11,8 +11,6 @@
 <script>
   import Item from './Item.vue'
 
-  console.log()
-
   export default {
     name: 'Card',
     components: {
@@ -28,7 +26,6 @@
   }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .card {
     background-color: #FFFF00;

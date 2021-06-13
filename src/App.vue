@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
+    <Score />
     <h1>DEV ROADMAP</h1>
     <div id="link-roadmap-type">
       <a href="?type=back-end">Back End</a>
@@ -17,10 +18,13 @@
 
 <script>
   import Card from './components/Card.vue'
+  import Score from './components/Score/Score.vue'
+
   import backEndRoadmap from './assets/jsons/back-end.json'
   import frontEndRoadmap from './assets/jsons/front-end.json'
   import devOpsRoadmap from './assets/jsons/dev-ops.json'
   import designAndArchRoadmap from './assets/jsons/design-and-arch.json'
+  
 
   const roadmapList = {
     'back-end': backEndRoadmap,
@@ -42,7 +46,8 @@
       }
     },
     components: {
-      Card
+      Card,
+        Score
     },
     methods : {
       selectRoadmapType: function () {
