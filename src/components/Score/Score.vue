@@ -1,10 +1,7 @@
 <template>
   <div class="score">
-    <div v-for="(progress, index) in progressList" :key="index"> 
-      <li>
-        <ProgressBarList :listProgress="progressList" />
-      </li>
-    </div>
+    Your Progress:
+    <ProgressBarList :listProgress="progressList" />
   </div>  
 </template>
 
@@ -32,10 +29,12 @@
       listRoadmaps: function () {
         const progressList = [];
         for(const roadmap in roadmapList) {
-          const progress = this.calculateProgress(roadmap);
+          const { progress, total, completedItems } = this.calculateProgress(roadmap);
           progressList.push({
+            completedItems,
             roadmap,
             progress,
+            total
           })
         }
         this.progressList = progressList;
@@ -51,7 +50,11 @@
           }
           total += section.items.length
         } 
-        return completedItems / total;
+        return { 
+          completedItems,
+          progress: completedItems / total,
+          total
+        };
       }
     },
     created: function() {
@@ -62,11 +65,14 @@
 
 <style scoped>
   .score {
-    width: 300px;
-    height: 300px;
+    /* width: 300px;
+    height: 300px; */
+
     background-color: aqua;
     position: fixed;
     right: 100px;
     top: 100px;
+    width: 320px;
+    /* padding: 30px; */
   }
 </style>
