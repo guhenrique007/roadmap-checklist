@@ -1,6 +1,6 @@
 <template>
   <div class="score">
-    Your Progress:
+    Your Roadmaps:
     <ProgressBarList :listProgress="progressList" />
   </div>  
 </template>
@@ -30,12 +30,14 @@
         const progressList = [];
         for(const roadmap in roadmapList) {
           const { progress, total, completedItems } = this.calculateProgress(roadmap);
-          progressList.push({
-            completedItems,
-            roadmap,
-            progress,
-            total
-          })
+          if(completedItems > 0) {
+            progressList.push({
+              completedItems,
+              roadmap,
+              progress,
+              total
+            })
+          }
         }
         this.progressList = progressList;
       },
@@ -73,6 +75,13 @@
     right: 100px;
     top: 100px;
     width: 320px;
-    /* padding: 30px; */
+    padding: 30px 0px;
+  }
+
+  @media only screen and (max-width: 1650px) {
+    .score{
+      right: 0px;
+      top: 0px;
+    }
   }
 </style>
