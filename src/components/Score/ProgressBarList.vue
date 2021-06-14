@@ -1,7 +1,7 @@
 <template>
   <div class="progress-list row mb-1">
     <div class="progress-div" v-for="(progress, index) in listProgress" :key="index"> 
-      <span class="col-sm-3">{{ progress.roadmap }}</span>
+      <span class="col-sm-3 progress-roadmap-title">{{ adjustRoadmapTitle(progress.roadmap) }}</span>
       <b-progress :max="progress.total" height="2rem" class="progress col-sm-5 pt-1">
         <b-progress-bar :value="progress.completedItems" variant="success">
           <!-- <span><strong>{{ ((progress.completedItems / progress.total) * 100).toFixed(1) }} %</strong></span> -->
@@ -13,21 +13,21 @@
 </template>
 
 <script lang="ts">
+  import {capitalizeFirstLetter} from "../../shared/utils";
+
   export default {
     name: 'Card',
     props: {
       listProgress: Array
     },
-    data() {
-      return {
-        value: 33.333333333,
-        max: 50
+    methods: {
+      created: function() {
+      },
+      adjustRoadmapTitle: function(roadmapTitle) {
+        return capitalizeFirstLetter(roadmapTitle)
+          .replaceAll('-',' ');
       }
-    },
-    created: function() {
-      // falta estilizar, colocar no meio o 1/1
-      console.log('-------', this.listProgress)
-    },
+    }
   }
 </script>
 
@@ -51,6 +51,8 @@
   .progress-value {
     position: absolute;
     left: 50px;
-    
+  }
+  .progress-roadmap-title{
+    text-align: left;
   }
 </style>
