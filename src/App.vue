@@ -49,27 +49,37 @@
       Card,
         Score
     },
-    methods : {
+    methods: {
       selectRoadmapType: function () {
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const type = urlParams.get('type');
 
-        if(type) {
-          const roadmapStorage = localStorage.getItem(`${type}-roadmap`);
-          
+        if(!type) return;
+        const roadmapStorage = localStorage.getItem(`${type}-roadmap`);
+
+        this.roadmap = JSON.parse(roadmapStorage);
+        this.roadmapType = type;
+      },
+      setRoadmapsToStorage: function () {
+        for(const roadmap of Object.keys(roadmapList)) {
+          const roadmapStorage = localStorage.getItem(`${roadmap}-roadmap`);
           if(!roadmapStorage) {
-            this.roadmap = roadmapList[type];
-            localStorage.setItem(`${type}-roadmap`, JSON.stringify(this.roadmap));
-          } else { 
-            this.roadmap = JSON.parse(roadmapStorage);
+            localStorage.setItem(`${roadmap}-roadmap`, JSON.stringify(roadmapList[roadmap]));
           }
-          
-          this.roadmapType = type;
         }
+      },
+      mergeRoadmaps: function (oldRoadmap, newRoadmap) {
+        console.log(oldRoadmap, newRoadmap)
+        //check if 
+
+        // newRoadmap.map((item, i) => {
+
+        // });
       }
     },
     created: function() {
+      this.setRoadmapsToStorage();
       this.selectRoadmapType();
     },
   }
