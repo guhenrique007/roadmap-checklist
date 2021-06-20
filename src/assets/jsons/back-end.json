@@ -1,33 +1,40 @@
 [
   {
+    "id": "0",
     "name": "Internet",
     "items": [
       {
+        "id": "1",
         "title": "What is HTTP?",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "2",
         "title": "DNS and how it works?",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "3",
         "title": "What is Domain Name?",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "4",
         "title": "What is hosting?",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "5",
         "title": "How does the internet work?",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "6",
         "title": "Browsers and how they work?",
         "done": false,
         "priority": "main"
@@ -35,19 +42,23 @@
     ]
   },
   {
+    "id": "7",
     "name": "Basic Frontend Knowledge",
     "items": [
       {
+        "id": "8",
         "title": "HTML",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "9",
         "title": "CSS",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "10",
         "title": "JavaScript",
         "done": false,
         "priority": "main"
@@ -55,97 +66,116 @@
     ]
   },
   {
+    "id": "11",
     "name": "OS and General Knowledge",
     "items": [
       {
+        "id": "12",
         "title": "Terminal Usage",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "13",
         "title": "How OSs work in General",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "14",
         "title": "Process Management",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "15",
         "title": "Threads and Concurrency",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "16",
         "title": "Basic Terminal Commands",
         "description": "grep, awk, sed, lsof, curl, wget, tail, head, less, find, ssh, kill",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "17",
         "title": "Memory Management",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "18",
         "title": "Interprocess Communication",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "19",
         "title": "I/O Management",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "20",
         "title": "POSIX Basics",
         "description": "stdin, stdout, stderr, pipes",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "21",
         "title": "Basic Networking Concepts",
         "done": false,
-        "priority": "main"
+        "priorit7y": "main"
       }
     ]
   },
   {
+    "id": "22",
     "name": "Learn a Language",
     "description": "Make sure to learn it's quirks. Core detail about it's runtime e.g. concurrency, memory model, etc.",
     "items": [
       {
+        "id": "23",
         "title": "Javascript",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "24",
         "title": "Go",
         "done": false,
         "priority": "optional"
       },
       {
+        "id": "25",
         "title": "Python",
         "done": false,
         "priority": "optional"
       },
       {
+        "id": "26",
         "title": "Java",
         "done": false,
         "priority": "optional"
       },
       {
+        "id": "27",
         "title": "Ruby",
         "done": false,
         "priority": "optional"
       },
       {
+        "id": "28",
         "title": "C#",
         "done": false,
         "priority": "optional"
       },
       {
+        "id": "29",
         "title": "PHP",
         "done": false,
         "priority": "optional"
@@ -153,29 +183,35 @@
     ]
   },
   {
+    "id": "30",
     "name": "Version Control Systems",
     "description": "What are they and why you should use one",
     "items": []
   },
   {
+    "id": "31",
     "name": "Basic Usage of Git",
     "items": []
   },
   {
+    "id": "32",
     "name": "Repo hosting services",
     "description": "Create account and Learn to use GitHub",
     "items": [
       {
+        "id": "33",
         "title": "GitHub",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "34",
         "title": "Bitbucket",
         "done": false,
         "priority": "optional"
       },
       {
+        "id": "35",
         "title": "GitLab",
         "done": false,
         "priority": "optional"
@@ -183,34 +219,41 @@
     ]
   },
   {
+    "id": "36",
     "name": "Relational Databases",
     "items": [
       {
+        "id": "37",
         "title": "PostgreSQL",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "38",
         "title": "MySQL",
         "done": false,
         "priority": "optional"
       },
       {
+        "id": "39",
         "title": "MySQL",
         "done": false,
         "priority": "optional"
       },
       {
+        "id": "40",
         "title": "MariaDB",
         "done": false,
         "priority": "optional"
       },
       {
+        "id": "41",
         "title": "MS SQL",
         "done": false,
         "priority": "optional"
       },
       {
+        "id": "42",
         "title": "Oracle",
         "done": false,
         "priority": "optional"
@@ -218,39 +261,47 @@
     ]
   },
   {
+    "id": "43",
     "name": "More about Databases",
     "items": [
       {
+        "id": "44",
         "title": "ORMs",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "45",
         "title": "ACID",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "46",
         "title": "Transactions",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "47",
         "title": "N+1 Problem",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "48",
         "title": "Data Replication",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "49",
         "title": "Sharding Strategies",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "50",
         "title": "CAP Theorem",
         "done": false,
         "priority": "main"
@@ -258,24 +309,29 @@
     ]
   },
   {
+    "id": "51",
     "name": "NoSQL Databases",
     "items": [
       {
+        "id": "52",
         "title": "MongoDB",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "53",
         "title": "RethinkDB",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "54",
         "title": "CouchDB",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "55",
         "title": "DynamoDB",
         "done": false,
         "priority": "main"
@@ -283,54 +339,65 @@
     ]
   },
   {
+    "id": "56",
     "name": "Learn about APIs",
     "items": [
       {
+        "id": "57",
         "title": "HATEOAS",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "58",
         "title": "Open API Spec and Swagger",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "59",
         "title": "Authentication",
         "done": false,
         "priority": "main",
-        "items" : [
+        "items": [
           {
+            "id": "60",
             "title": "Cookie Based",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "61",
             "title": "OAuth",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "62",
             "title": "Basic Authentication",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "63",
             "title": "Token Authentication",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "64",
             "title": "JWT",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "65",
             "title": "OpenID",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "66",
             "title": "SAML",
             "done": false,
             "priority": "main"
@@ -338,16 +405,19 @@
         ]
       },
       {
+        "id": "67",
         "title": "REST",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "68",
         "title": "JSON APIs",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "69",
         "title": "SOAP",
         "done": false,
         "priority": "main"
@@ -355,29 +425,35 @@
     ]
   },
   {
+    "id": "70",
     "name": "Caching",
     "items": [
       {
+        "id": "71",
         "title": "CDN",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "72",
         "title": "Client Side",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "73",
         "title": "Server Side",
         "done": false,
         "priority": "main",
         "items": [
           {
+            "id": "74",
             "title": "Memcached",
             "done": false,
             "priority": "optional"
           },
           {
+            "id": "75",
             "title": "Redis",
             "done": false,
             "priority": "main"
@@ -387,29 +463,35 @@
     ]
   },
   {
+    "id": "76",
     "name": "Web Security Knowledge",
     "items": [
       {
+        "id": "77",
         "title": "HTTPS",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "78",
         "title": "CORS",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "79",
         "title": "OWASP Security Risks",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "80",
         "title": "Content Security Policy",
         "done": false,
         "priority": "optional"
       },
       {
+        "id": "81",
         "title": "SSL/TLS",
         "done": false,
         "priority": "main"
@@ -417,24 +499,29 @@
     ]
   },
   {
+    "id": "82",
     "name": "Web Security Knowledgment (Hashing Algorithms)",
     "items": [
       {
+        "id": "83",
         "title": "MD5 and why not to use it",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "84",
         "title": "SHA Family",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "85",
         "title": "scrypt",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "86",
         "title": "bcrypt",
         "done": false,
         "priority": "main"
@@ -442,19 +529,23 @@
     ]
   },
   {
+    "id": "87",
     "name": "Testing",
     "items": [
       {
+        "id": "88",
         "title": "Integration Testing",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "89",
         "title": "Unit Testing",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "90",
         "title": "Functional Testing",
         "done": false,
         "priority": "main"
@@ -462,9 +553,11 @@
     ]
   },
   {
+    "id": "91",
     "name": "CI/CD",
     "items": [
       {
+        "id": "92",
         "title": "CI/CD",
         "done": false,
         "priority": "main"
@@ -472,39 +565,47 @@
     ]
   },
   {
+    "id": "93",
     "name": "Design and Development Principles",
     "items": [
       {
+        "id": "94",
         "title": "GOF Design Patterns",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "95",
         "title": "Domain Driven Design (DDD)",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "96",
         "title": "Test Driven Development",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "97",
         "title": "SOLID",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "98",
         "title": "KISS",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "99",
         "title": "YAGNI",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "100",
         "title": "DRY",
         "done": false,
         "priority": "main"
@@ -512,29 +613,35 @@
     ]
   },
   {
+    "id": "101",
     "name": "Architetural Patterns",
     "items": [
       {
+        "id": "102",
         "title": "Monolitics Apps",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "103",
         "title": "Microservices",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "104",
         "title": "SOA",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "105",
         "title": "CQRS and Event Sourcing",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "106",
         "title": "Serverless",
         "done": false,
         "priority": "main"
@@ -542,14 +649,17 @@
     ]
   },
   {
+    "id": "107",
     "name": "Search Engines",
     "items": [
       {
+        "id": "108",
         "title": "Elasticsearch",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "109",
         "title": "Solr",
         "done": false,
         "priority": "optional"
@@ -557,14 +667,17 @@
     ]
   },
   {
+    "id": "110",
     "name": "Message Brokers",
     "items": [
       {
+        "id": "111",
         "title": "RabbitMQ",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "112",
         "title": "Kafka",
         "done": false,
         "priority": "optional"
@@ -572,19 +685,23 @@
     ]
   },
   {
+    "id": "113",
     "name": "Containerization vs Virtualization",
     "items": [
       {
+        "id": "114",
         "title": "Docker",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "115",
         "title": "rkt",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "116",
         "title": "LXC",
         "done": false,
         "priority": "main"
@@ -592,14 +709,17 @@
     ]
   },
   {
+    "id": "117",
     "name": "GraphQL",
     "items": [
       {
+        "id": "118",
         "title": "Apollo",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "119",
         "title": "Relay Modern",
         "done": false,
         "priority": "optional"
@@ -607,9 +727,11 @@
     ]
   },
   {
+    "id": "120",
     "name": "Graph Database",
     "items": [
       {
+        "id": "121",
         "title": "Neo4j",
         "done": false,
         "priority": "main"
@@ -617,9 +739,11 @@
     ]
   },
   {
+    "id": "122",
     "name": "WebSockets",
     "items": [
       {
+        "id": "123",
         "title": "WebSockets",
         "done": false,
         "priority": "main"
@@ -627,24 +751,29 @@
     ]
   },
   {
+    "id": "124",
     "name": "Web Servers",
     "items": [
       {
+        "id": "125",
         "title": "Nginx",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "126",
         "title": "Apache",
         "done": false,
         "priority": "optional"
       },
       {
+        "id": "127",
         "title": "Caddy",
         "done": false,
         "priority": "optional"
       },
       {
+        "id": "128",
         "title": "MS IIS",
         "done": false,
         "priority": "optional"
@@ -652,66 +781,79 @@
     ]
   },
   {
+    "id": "129",
     "name": "Building for Scale",
     "description": "General topics that you should learn and care about for the sustainability of the product",
     "items": [
       {
+        "id": "130",
         "title": "Migration Strategies",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "131",
         "title": "Horizontal vs Vertical Scaling",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "132",
         "title": "Building Observability in mind",
         "description": "Metrics logging and other observable items that could help you in debugging and solving the issues when things go wrong",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "133",
         "title": "Mitigation Strategies",
         "done": false,
         "priority": "main",
         "items": [
           {
+            "id": "134",
             "title": "Graceful Degradation",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "135",
             "title": "Throttling",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "136",
             "title": "Backpressure",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "137",
             "title": "Loadshifting",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "138",
             "title": "Circuit Breaker",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "139",
             "title": "Instrumentation",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "140",
             "title": "Monitoring",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "141",
             "title": "Telemetry",
             "done": false,
             "priority": "main"
@@ -721,6 +863,7 @@
     ]
   },
   {
+    "id": "142",
     "name": "Keep Learning :)",
     "items": []
   }

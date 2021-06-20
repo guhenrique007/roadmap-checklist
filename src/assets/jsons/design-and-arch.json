@@ -1,78 +1,94 @@
 [
   {
+    "id": "0",
     "name": "Clean Code",
     "items": [
       {
+        "id": "1",
         "title": "Be consistent",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "2",
         "title": "Prefer meaningful names over comments",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "3",
         "title": "Identation and style",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "4",
         "title": "Keep methods, classes, files small",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "5",
         "title": "Be consistent",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "6",
         "title": "Refactor switch statements to classes",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "7",
         "title": "Don't pass booleans",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "8",
         "title": "Use the correct constructs",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "9",
         "title": "Don't pass null",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "10",
         "title": "Command Query Separation",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "11",
         "title": "Organize code by the actor it belongs to",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "12",
         "title": "Keep framework code distant",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "13",
         "title": "Test should be fast, independent and repeatable",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "14",
         "title": "Refactor often",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "15",
         "title": "Use meaningful names",
         "done": false,
         "priority": "main"
@@ -80,19 +96,23 @@
     ]
   },
   {
+    "id": "16",
     "name": "Programming Paradigms",
     "items": [
       {
+        "id": "17",
         "title": "Structured Programming",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "18",
         "title": "Functional Programming",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "19",
         "title": "Object-oriented Programming",
         "done": false,
         "priority": "main"
@@ -100,27 +120,33 @@
     ]
   },
   {
+    "id": "20",
     "name": "Object-oriented Programming",
     "items": [
       {
-        "title":"OOP (4 Primary Principles)",
-        "items": [      
+        "id": "21",
+        "title": "OOP (4 Primary Principles)",
+        "items": [
           {
+            "id": "22",
             "title": "Inheritance",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "23",
             "title": "Polymorphism",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "24",
             "title": "Abstraction",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "25",
             "title": "Encapsulation",
             "done": false,
             "priority": "main"
@@ -128,24 +154,29 @@
         ]
       },
       {
-        "title":"Paradigm Features",
-        "items": [      
+        "id": "26",
+        "title": "Paradigm Features",
+        "items": [
           {
+            "id": "27",
             "title": "Abstract classes",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "28",
             "title": "Concrete classes",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "29",
             "title": "Scope / visibility",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "30",
             "title": "Interfaces",
             "done": false,
             "priority": "main"
@@ -153,72 +184,85 @@
         ]
       },
       {
-        "title":"Model-Driven Design",
-        "items": [      
+        "id": "31",
+        "title": "Model-Driven Design",
+        "items": [
           {
+            "id": "32",
             "title": "Understand domain models",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "33",
             "title": "Understand anemic models",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "34",
             "title": "Layered architectures",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "35",
             "title": "Domain language",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "36",
             "title": "Class invariants",
             "done": false,
             "priority": "main"
           }
-
         ]
       }
     ]
   },
   {
+    "id": "37",
     "name": "Design Principles",
     "items": [
       {
+        "id": "38",
         "title": "Composition over inheritance",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "39",
         "title": "Encapsulate what varies",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "40",
         "title": "Program agains abstractions",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "41",
         "title": "Hollywood principle",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "42",
         "title": "SOLID",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "43",
         "title": "DRY",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "44",
         "title": "YAGNI",
         "done": false,
         "priority": "main"
@@ -226,27 +270,33 @@
     ]
   },
   {
+    "id": "45",
     "name": "Design Patterns",
     "items": [
       {
-        "title":"Creational",
-        "items": [      
+        "id": "46",
+        "title": "Creational",
+        "items": [
           {
+            "id": "47",
             "title": "Singleton",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "48",
             "title": "Factories",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "49",
             "title": "Prototypes",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "50",
             "title": "Builder",
             "done": false,
             "priority": "main"
@@ -254,29 +304,35 @@
         ]
       },
       {
-        "title":"Structural",
-        "items": [      
+        "id": "51",
+        "title": "Structural",
+        "items": [
           {
+            "id": "52",
             "title": "Adapter",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "53",
             "title": "Bridge",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "54",
             "title": "Decorator",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "55",
             "title": "Composite",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "56",
             "title": "Proxy",
             "done": false,
             "priority": "main"
@@ -284,29 +340,35 @@
         ]
       },
       {
-        "title":"Model-Driven Design",
-        "items": [      
+        "id": "57",
+        "title": "Model-Driven Design",
+        "items": [
           {
+            "id": "58",
             "title": "Understand domain models",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "59",
             "title": "Understand anemic models",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "60",
             "title": "Layered architectures",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "61",
             "title": "Domain language",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "62",
             "title": "Class invariants",
             "done": false,
             "priority": "main"
@@ -316,24 +378,29 @@
     ]
   },
   {
+    "id": "63",
     "name": "Architetural Principles",
     "items": [
       {
+        "id": "64",
         "title": "Policy vs. detail",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "65",
         "title": "Coupling & cohesion",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "66",
         "title": "Component principles",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "67",
         "title": "Boundaries",
         "done": false,
         "priority": "main"
@@ -341,22 +408,27 @@
     ]
   },
   {
+    "id": "68",
     "name": "Archhitectural Styles",
     "items": [
       {
-        "title":"Structural",
-        "items": [      
+        "id": "69",
+        "title": "Structural",
+        "items": [
           {
+            "id": "70",
             "title": "Component-based",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "71",
             "title": "Monolithic",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "72",
             "title": "Layered",
             "done": false,
             "priority": "main"
@@ -364,14 +436,17 @@
         ]
       },
       {
-        "title":"Messaging",
-        "items": [      
+        "id": "73",
+        "title": "Messaging",
+        "items": [
           {
+            "id": "74",
             "title": "Event-Driven",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "75",
             "title": "Publish-Subsribe",
             "done": false,
             "priority": "main"
@@ -379,14 +454,17 @@
         ]
       },
       {
-        "title":"Distributed",
-        "items": [      
+        "id": "76",
+        "title": "Distributed",
+        "items": [
           {
+            "id": "77",
             "title": "Client-Server",
             "done": false,
             "priority": "main"
           },
           {
+            "id": "78",
             "title": "Peer-to-peer",
             "done": false,
             "priority": "main"
@@ -396,49 +474,59 @@
     ]
   },
   {
+    "id": "79",
     "name": "Architectural Patterns",
     "items": [
       {
+        "id": "80",
         "title": "Domain-Driven Design",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "81",
         "title": "Model-View Controller",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "82",
         "title": "Microservices",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "83",
         "title": "Blackboard pattern",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "84",
         "title": "Microkernel",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "85",
         "title": "Serveless Architecture",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "86",
         "title": "CQRS",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "87",
         "title": "Event Sourcing",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "88",
         "title": "Message Queues / Streams",
         "done": false,
         "priority": "main"
@@ -446,59 +534,71 @@
     ]
   },
   {
+    "id": "89",
     "name": "Enterprise Patterns",
     "items": [
       {
+        "id": "90",
         "title": "DTOs",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "91",
         "title": "Identify Maps",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "92",
         "title": "Use Cases",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "93",
         "title": "Repositories",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "94",
         "title": "Mappers",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "95",
         "title": "Transaction Script",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "96",
         "title": "Commands / Queries",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "97",
         "title": "Value Objects",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "98",
         "title": "Domain Models",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "99",
         "title": "Entities",
         "done": false,
         "priority": "main"
       },
       {
+        "id": "100",
         "title": "ORMs",
         "done": false,
         "priority": "main"
@@ -506,6 +606,7 @@
     ]
   },
   {
+    "id": "101",
     "name": "Keep Learning :)",
     "items": []
   }
