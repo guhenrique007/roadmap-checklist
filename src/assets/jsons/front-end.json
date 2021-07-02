@@ -1,5 +1,8 @@
 [
   {
+    "version": 1.0
+  },
+  {
     "id": "1",
     "name": "FRONT TEST",
     "items": [
@@ -32,7 +35,7 @@
         "title": "Screen",
         "done": true,
         "priority": "optional"
-      } 
+      }
     ]
   }
 ]
