@@ -38,6 +38,7 @@ let roadmap;
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const type = urlParams.get("type");
+const roadmapName = `${type}-roadmap`;
 
 export default {
   name: "App",
@@ -61,10 +62,10 @@ export default {
     },
     setRoadmapsToStorage: function () {
       for (const roadmap of Object.keys(roadmapList)) {
-        const roadmapStorage = localStorage.getItem(`${roadmap}-roadmap`);
+        const roadmapStorage = localStorage.getItem(roadmapName);
         if (!roadmapStorage) {
           localStorage.setItem(
-            `${roadmap}-roadmap`,
+            roadmapName,
             JSON.stringify(roadmapList[roadmap])
           );
           localStorage.setItem(`${roadmap}-progress`, JSON.stringify([]));
@@ -72,31 +73,31 @@ export default {
       }
     },
     checkVersion: function () {
-      const roadmapStorage = JSON.parse(
-        localStorage.getItem(`${type}-roadmap`)
-      );
+      const roadmapStorage = JSON.parse(localStorage.getItem(roadmapName));
+      const newRoadmap = JSON.stringify(roadmapList[type]);
 
       if (roadmapStorage[0].version !== roadmapList[type][0].version) {
-        //update storage with thhe static json
-        const newRoadmap = JSON.stringify(roadmapList[type]);
-        localStorage.setItem(`${type}-roadmap`, newRoadmap);
-
-        //fill roadmap with lastest progress
-        const latestProgress = JSON.parse(
-          localStorage.getItem(`${type}-progress`)
-        );
-        const updatedStorage = roadmapStorage.map((section) => {
-          if (section.items) {
-            section.items.some((item) => {
-              item.done = latestProgress.includes(item.id) ? true : false;
-              return item;
-            });
-          }
-          return section;
-        });
-
-        localStorage.setItem(`${type}-roadmap`, JSON.stringify(updatedStorage));
+        this.updateRoadmapWithNewVersion(newRoadmap);
+        this.fillRoadmapWithProgress(roadmapStorage);
       }
+    },
+    fillRoadmapWithProgress: function (roadmap) {
+      const progress = localStorage.getItem(`${type}-progress`);
+      const latestProgress = JSON.parse(progress);
+      const updatedStorage = roadmap.map((section) => {
+        if (section.items) {
+          section.items.some((item) => {
+            item.done = latestProgress.includes(item.id) ? true : false;
+            return item;
+          });
+        }
+        return section;
+      });
+
+      localStorage.setItem(roadmapName, JSON.stringify(updatedStorage));
+    },
+    updateRoadmapWithNewVersion: function (newRoadmap) {
+      localStorage.setItem(roadmapName, newRoadmap);
     },
   },
   created: function () {
