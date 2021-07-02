@@ -35,6 +35,9 @@ console.log(roadmapList);
 
 let roadmapType;
 let roadmap;
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const type = urlParams.get("type");
 
 export default {
   name: "App",
@@ -50,10 +53,6 @@ export default {
   },
   methods: {
     selectRoadmapType: function () {
-      const queryString = window.location.search;
-      const urlParams = new URLSearchParams(queryString);
-      const type = urlParams.get("type");
-
       if (!type) return;
       const roadmapStorage = localStorage.getItem(`${type}-roadmap`);
 
@@ -72,8 +71,36 @@ export default {
         }
       }
     },
+    checkVersion: function () {
+      const roadmapStorage = JSON.parse(
+        localStorage.getItem(`${type}-roadmap`)
+      );
+
+      if (roadmapStorage[0].version !== roadmapList[type][0].version) {
+        //update storage with thhe static json
+        const newRoadmap = JSON.stringify(roadmapList[type]);
+        localStorage.setItem(`${type}-roadmap`, newRoadmap);
+
+        //fill roadmap with lastest progress
+        const latestProgress = JSON.parse(
+          localStorage.getItem(`${type}-progress`)
+        );
+        const updatedStorage = roadmapStorage.map((section) => {
+          if (section.items) {
+            section.items.some((item) => {
+              item.done = latestProgress.includes(item.id) ? true : false;
+              return item;
+            });
+          }
+          return section;
+        });
+
+        localStorage.setItem(`${type}-roadmap`, JSON.stringify(updatedStorage));
+      }
+    },
   },
   created: function () {
+    this.checkVersion();
     this.setRoadmapsToStorage();
     this.selectRoadmapType();
   },
