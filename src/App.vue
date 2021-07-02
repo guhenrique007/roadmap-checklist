@@ -4,10 +4,14 @@
     <Score />
     <h1>DEV ROADMAP</h1>
     <div id="link-roadmap-type">
-      <a href="?type=back-end">Back End</a>
-      <a href="?type=front-end">Front End</a>
-      <a href="?type=dev-ops">Dev Ops</a>
-      <a href="?type=design-and-arch">Design & Architecture</a>
+      <a href="?type=back-end" :style="{ color: setRandomColor() }">Back End</a>
+      <a href="?type=front-end" :style="{ color: setRandomColor() }"
+        >Front End</a
+      >
+      <a href="?type=dev-ops" :style="{ color: setRandomColor() }">Dev Ops</a>
+      <a href="?type=design-and-arch" :style="{ color: setRandomColor() }"
+        >Design & Architecture</a
+      >
     </div>
     <div class="roadmap" v-for="(step, index) in roadmap" :key="index">
       <Card :step="step" :listItems="step.items" />
@@ -95,7 +99,11 @@ export default {
 
       save(roadmapName, updatedStorage);
     },
+    setRandomColor: function () {
+      return "#" + (((1 << 24) * Math.random()) | 0).toString(16);
+    },
   },
+
   created: function () {
     this.checkVersion();
     this.setRoadmapsToStorage();
@@ -105,6 +113,7 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100;0,400;1,600&display=swap");
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -123,6 +132,11 @@ export default {
 }
 
 #link-roadmap-type a {
+  font-family: "Tourney", cursive;
+  text-decoration: none;
+  color: #42a917;
+  font-size: 30px;
+  font-weight: 600;
   margin: 20px;
 }
 
