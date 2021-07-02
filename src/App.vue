@@ -17,6 +17,8 @@
 </template>
 
 <script>
+import { getItem, toJson, save } from "./shared/utils";
+
 import Card from "./components/Card.vue";
 import Score from "./components/Score/Score.vue";
 
@@ -55,34 +57,31 @@ export default {
   methods: {
     selectRoadmapType: function () {
       if (!type) return;
-      const roadmapStorage = localStorage.getItem(`${type}-roadmap`);
+      const roadmapStorage = getItem(`${type}-roadmap`);
 
       this.roadmap = JSON.parse(roadmapStorage);
       this.roadmapType = type;
     },
     setRoadmapsToStorage: function () {
       for (const roadmap of Object.keys(roadmapList)) {
-        const roadmapStorage = localStorage.getItem(roadmapName);
+        const roadmapStorage = getItem(roadmapName);
         if (!roadmapStorage) {
-          localStorage.setItem(
-            roadmapName,
-            JSON.stringify(roadmapList[roadmap])
-          );
-          localStorage.setItem(`${roadmap}-progress`, JSON.stringify([]));
+          save(roadmapName, toJson(roadmapList[roadmap]));
+          save(`${roadmap}-progress`, toJson([]));
         }
       }
     },
     checkVersion: function () {
-      const roadmapStorage = JSON.parse(localStorage.getItem(roadmapName));
-      const newRoadmap = JSON.stringify(roadmapList[type]);
+      const roadmapStorage = JSON.parse(getItem(roadmapName));
+      const newRoadmapVersion = toJson(roadmapList[type]);
 
       if (roadmapStorage[0].version !== roadmapList[type][0].version) {
-        this.updateRoadmapWithNewVersion(newRoadmap);
+        save(roadmapName, newRoadmapVersion);
         this.fillRoadmapWithProgress(roadmapStorage);
       }
     },
     fillRoadmapWithProgress: function (roadmap) {
-      const progress = localStorage.getItem(`${type}-progress`);
+      const progress = getItem(`${type}-progress`);
       const latestProgress = JSON.parse(progress);
       const updatedStorage = roadmap.map((section) => {
         if (section.items) {
@@ -94,10 +93,7 @@ export default {
         return section;
       });
 
-      localStorage.setItem(roadmapName, JSON.stringify(updatedStorage));
-    },
-    updateRoadmapWithNewVersion: function (newRoadmap) {
-      localStorage.setItem(roadmapName, newRoadmap);
+      save(roadmapName, updatedStorage);
     },
   },
   created: function () {
