@@ -29,8 +29,7 @@ export default {
     listRoadmaps: function () {
       const progressList = [];
       for (const roadmap in roadmapList) {
-        const { progress, total, completedItems } =
-          this.calculateProgress(roadmap);
+        const { progress, total, completedItems } = this.calculateProgress(roadmap);
         if (completedItems > 0) {
           progressList.push({
             completedItems,

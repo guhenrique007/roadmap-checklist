@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { getItem, toJson, save } from "./shared/utils";
+import { getItem, save } from "./shared/utils";
 
 import Card from "./components/Card.vue";
 import Score from "./components/Score/Score.vue";
@@ -68,25 +68,28 @@ export default {
     },
     setRoadmapsToStorage: function () {
       for (const roadmap of Object.keys(roadmapList)) {
-        const roadmapStorage = getItem(roadmapName);
+        const roadmapStorageKey = `${roadmap}-roadmap`;
+        const roadmapStorage = getItem(roadmapStorageKey);
         if (!roadmapStorage) {
-          save(roadmapName, toJson(roadmapList[roadmap]));
-          save(`${roadmap}-progress`, toJson([]));
+          save(roadmapStorageKey, roadmapList[roadmap]);
+          save(`${roadmap}-progress`, []);
         }
       }
     },
     checkVersion: function () {
+      const newRoadmapVersion = roadmapList[type];
       const roadmapStorage = JSON.parse(getItem(roadmapName));
-      const newRoadmapVersion = toJson(roadmapList[type]);
+      if(!roadmapStorage) return;
 
       if (roadmapStorage[0].version !== roadmapList[type][0].version) {
         save(roadmapName, newRoadmapVersion);
-        this.fillRoadmapWithProgress(roadmapStorage);
+        this.fillRoadmapWithProgress(newRoadmapVersion);
       }
     },
     fillRoadmapWithProgress: function (roadmap) {
       const progress = getItem(`${type}-progress`);
       const latestProgress = JSON.parse(progress);
+
       const updatedStorage = roadmap.map((section) => {
         if (section.items) {
           section.items.some((item) => {

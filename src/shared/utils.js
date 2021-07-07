@@ -4,8 +4,8 @@ export function capitalizeFirstLetter(string) {
 
 export const toJson = content => JSON.stringify(content);
 
-export const getItem = item => localStorage.getItem(item)
+export const getItem = item => localStorage.getItem(item);
 
-export const save = (key, content) => { 
-  localStorage.setItem(key, toJson(content)) 
+export const save = (key, content) => {
+  localStorage.setItem(key, toJson(content))
 }
