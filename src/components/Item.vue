@@ -1,11 +1,12 @@
 <template>
-  <div class="item">
+  <div class="item" :class="item.items ? 'has-sub-items': '' ">
     <div style="display: flex">
       <input
         type="checkbox"
         name="option"
         :checked="item.done"
         @change="saveChoice($event)"
+        v-if="!item.items"
       />
       <div class="text-container">
         <span v-html="item.title" class="item-text"></span><br />
@@ -124,9 +125,24 @@ export default {
   box-shadow: 0 10px 10px rgb(126 126 126 / 10%);
 }
 
+.item.has-sub-items {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.item:not(.has-sub-items):hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
 .sub-items {
   display: flex;
   flex-direction: column;
+}
+
+.sub-item-container:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 
 .sub-item-container {
