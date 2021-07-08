@@ -26,6 +26,8 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
 .card {
   background-color: #ffff00;
   border: 2px solid;
@@ -34,6 +36,7 @@ export default {
 
 .title-section {
   width: 600px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .description-section {

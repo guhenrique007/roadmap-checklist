@@ -117,6 +117,7 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100;0,400;1,600&display=swap");
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -131,7 +132,7 @@ export default {
 }
 
 #link-roadmap-type {
-  margin: 20px 0px;
+  margin: 100px 0px;
 }
 
 #link-roadmap-type a {
@@ -156,4 +157,5 @@ export default {
   height: 40px;
   background-color: black;
 }
+
 </style>
