@@ -50,6 +50,16 @@ export default {
         if (!section.items) continue;
         for (const item of section.items) {
           if (item.done) completedItems += 1;
+
+          if(item.items) {
+            total -=1;
+            item.items.map(subitem => {
+              total += 1;
+              if(subitem.done) {
+                completedItems += 1;
+              }
+            })
+          }
         }
         total += section.items.length;
       }
