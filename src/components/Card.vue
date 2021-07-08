@@ -30,8 +30,10 @@ export default {
 
 .card {
   background-color: #ffff00;
-  border: 2px solid;
+  /* border: 2px solid; */
   padding: 50px;
+  box-shadow: 0 10px 10px rgb(126 126 126 / 10%);
+
 }
 
 .title-section {
