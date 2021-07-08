@@ -37,14 +37,7 @@
     margin-top: 20px;
     justify-content: space-evenly;
   }
-  .progress-list{
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
-  }
   .progress {
-    /* width: 50px;
-    height: 50px; */
     position: relative;
     background-color: rgb(126, 133, 133);
   }

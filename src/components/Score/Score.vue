@@ -78,9 +78,6 @@ export default {
 
 <style scoped>
 .score {
-  /* width: 300px;
-    height: 300px; */
-
   background-color: aqua;
   position: fixed;
   right: 100px;
