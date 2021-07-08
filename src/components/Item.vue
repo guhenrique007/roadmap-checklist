@@ -112,13 +112,16 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Yanone+Kaffeesatz&display=swap');
+
 .item {
   display: flex;
   flex-direction: column;
   background-color: #ffe599;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid;
+  /* border: 1px solid; */
+  box-shadow: 0 10px 10px rgb(126 126 126 / 10%);
 }
 
 .sub-items {
@@ -127,12 +130,12 @@ export default {
 }
 
 .sub-item-container {
-  border: 1px solid;
   padding: 10px;
   margin-left: 40px;
   margin-bottom: 10px;
   background-color: #e8c86b;
   display: flex;
+  box-shadow: 0 10px 10px rgb(126 126 126 / 10%);
 }
 
 .text-container {
@@ -142,6 +145,7 @@ export default {
 
 .item-text {
   text-align: left;
+  font-family: 'Assistant', sans-serif;
 }
 
 .item-description {

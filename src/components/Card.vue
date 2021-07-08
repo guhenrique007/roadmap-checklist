@@ -33,8 +33,8 @@ export default {
   /* border: 2px solid; */
   padding: 50px;
   box-shadow: 0 10px 10px rgb(126 126 126 / 10%);
-
 }
+
 
 .title-section {
   width: 600px;
