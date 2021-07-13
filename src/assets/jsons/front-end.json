@@ -38,5 +38,25 @@
         "priority": "optional"
       }
     ]
+  },
+  {
+    "id": "7",
+    "name": "test sub",
+    "items": [
+      {
+        "id": "8",
+        "title": "Screen",
+        "items": [
+          {
+            "id": "9",
+            "title": "test"
+          },
+          {
+            "id": "10",
+            "title": "test2"
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 <template>
   <div class="score">
-    Your Roadmaps:
+    <h5>Your Roadmaps:</h5>
     <ProgressBarList :listProgress="progressList" />
   </div>
 </template>
@@ -78,12 +78,16 @@ export default {
 
 <style scoped>
 .score {
-  background-color: aqua;
+  background-color: rgb(226 236 236);
   position: fixed;
   right: 100px;
   top: 100px;
   width: 320px;
-  padding: 30px 0px;
+  padding: 30px 10px 0px;
+}
+
+h5 {
+  margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 1650px) {
