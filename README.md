@@ -5,7 +5,7 @@ The data is saved on browser local storage, you can acess the production version
 
 ## Project Details
 - Vue.Js
-- About roadmap: 
+- About roadmap files: 
   - allowed formats: JSON
   - `src/assets/json` has a initial set of roadmaps
   - a roadmap progess is stored in localStorage
