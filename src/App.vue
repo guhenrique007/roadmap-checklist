@@ -41,7 +41,6 @@ const roadmapList = {
   "dev-ops": devOpsRoadmap,
   "design-and-arch": designAndArchRoadmap,
 };
-console.log(roadmapList);
 
 let roadmapType;
 let roadmap;
@@ -97,7 +96,7 @@ export default {
 
       const updatedStorage = roadmap.map((section) => {
         if (section.items) {
-          section.items.some((item) => {
+          section.items.map((item) => {
             item.done = latestProgress.includes(item.id) ? true : false;
             return item;
           });
