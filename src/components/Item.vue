@@ -1,5 +1,5 @@
 <template>
-  <div class="item" :class="item.items ? 'has-sub-items': '' ">
+  <div class="item" :class="item.items ? 'has-sub-items' : ''">
     <div style="display: flex">
       <input
         type="checkbox"
@@ -14,6 +14,13 @@
       </div>
       <span v-if="item.priority === 'optional'" class="priority">
         <i>(Optional)</i>
+      </span>
+      <span
+        class="external-links"
+        v-if="item.links"
+        v-on:click="openLinks(item.links)"
+      >
+        link
       </span>
     </div>
     <div class="sub-items" v-if="item.items">
@@ -44,7 +51,6 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const type = urlParams.get("type");
-console.log(type);
 
 export default {
   name: "Item",
@@ -60,17 +66,11 @@ export default {
       let progress = JSON.parse(localStorage.getItem(`${type}-progress`));
       const idItem = e.target.closest(".item").id;
 
-      console.log("progressIni", progress);
-
-      console.log("chegou", idItem);
       if (itemChecked.checked) {
         progress.push(idItem);
-        console.log(progress);
       } else {
         progress = progress.filter((item) => item !== idItem);
-        console.log("removidos:", progress);
       }
-      console.log(JSON.stringify(progress));
       localStorage.setItem(`${type}-progress`, JSON.stringify(progress));
 
       myjson.map((section) => {
@@ -108,12 +108,18 @@ export default {
 
       localStorage.setItem(`${type}-roadmap`, JSON.stringify(myjson));
     },
+    openLinks: function (links) {
+      console.log(links);
+      links.map((link) => {
+        window.open(link, "_blank").focus();
+      });
+    },
   },
 };
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Yanone+Kaffeesatz&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Assistant&family=Yanone+Kaffeesatz&display=swap");
 
 .item {
   display: flex;
@@ -121,7 +127,7 @@ export default {
   background-color: #ffe599;
   padding: 10px;
   margin-bottom: 10px;
-  /* border: 1px solid; */
+  position: relative;
   box-shadow: 0 10px 10px rgb(126 126 126 / 10%);
 }
 
@@ -161,7 +167,7 @@ export default {
 
 .item-text {
   text-align: left;
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
 }
 
 .item-description {
@@ -177,5 +183,11 @@ input {
 
 .priority {
   margin-left: 50px;
+}
+
+.external-links {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
 }
 </style>
