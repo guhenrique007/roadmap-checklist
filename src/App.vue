@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <DarkModeButton />
+    <div id="main-logo"></div>
     <Score />
-    <h1>DEV ROADMAP</h1>
+    <h1 id="main-title">DEV ROADMAP</h1>
     <div id="link-roadmap-type">
       <a href="?type=back-end" :style="{ color: setRandomColor() }">Back End</a>
       <a href="?type=front-end" :style="{ color: setRandomColor() }"
@@ -23,9 +24,12 @@
 <script>
 import { getItem, save } from "./shared/utils";
 
+// Componentes
 import Card from "./components/Card.vue";
 import Score from "./components/Score/Score.vue";
+import DarkModeButton from "./components/Buttons/DarkModeButton.vue";
 
+// Roadmaps
 import backEndRoadmap from "./assets/jsons/back-end.json";
 import frontEndRoadmap from "./assets/jsons/front-end.json";
 import devOpsRoadmap from "./assets/jsons/dev-ops.json";
@@ -57,6 +61,7 @@ export default {
   components: {
     Card,
     Score,
+    DarkModeButton,
   },
   methods: {
     selectRoadmapType: function () {
@@ -79,7 +84,7 @@ export default {
     checkVersion: function () {
       const newRoadmapVersion = roadmapList[type];
       const roadmapStorage = JSON.parse(getItem(roadmapName));
-      if(!roadmapStorage) return;
+      if (!roadmapStorage) return;
 
       if (roadmapStorage[0].version !== roadmapList[type][0].version) {
         save(roadmapName, newRoadmapVersion);
@@ -119,11 +124,30 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100;0,400;1,600&display=swap");
 
 * {
-  padding:0;
-  margin:0;
-  vertical-align:baseline;
-  list-style:none;
-  border:0
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+
+:root {
+  --background-color-primary: #ebebeb;
+  --background-color-secondary: #fafafa;
+  --accent-color: #cacaca;
+  --text-primary-color: #222;
+  --element-size: 4rem;
+  --logo-src: url("./assets/logo.png");
+  --filter-logo: brightness(0);
+}
+
+/* Define styles for the root window with dark - mode preference */
+:root.dark-theme {
+  --background-color-primary: #1e1e1e;
+  --background-color-secondary: #2d2d30;
+  --accent-color: #3f3f3f;
+  --text-primary-color: #ddd;
+  --filter-logo: brightness(9.5);
 }
 
 #app {
@@ -136,6 +160,20 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: var(--background-color-primary);
+}
+
+#main-title {
+  color: var(--text-primary-color);
+}
+
+#main-logo {
+  background-image: var(--logo-src);
+  height: 250px;
+  width: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: var(--filter-logo);
 }
 
 #link-roadmap-type {
@@ -164,5 +202,4 @@ export default {
   height: 40px;
   background-color: black;
 }
-
 </style>
