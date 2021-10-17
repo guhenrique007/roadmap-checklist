@@ -130,6 +130,10 @@ export default {
   border: 0;
 }
 
+body {
+  height: 100%;
+}
+
 :root {
   --background-color-primary: #ebebeb;
   --background-color-secondary: #fafafa;
@@ -138,6 +142,7 @@ export default {
   --element-size: 4rem;
   --logo-src: url("./assets/logo.png");
   --filter-logo: brightness(0);
+  height: 100%;
 }
 
 /* Define styles for the root window with dark - mode preference */
@@ -147,6 +152,7 @@ export default {
   --accent-color: #3f3f3f;
   --text-primary-color: #ddd;
   --filter-logo: brightness(9.5);
+  height: 100%;
 }
 
 #app {
@@ -160,6 +166,7 @@ export default {
   align-items: center;
   flex-direction: column;
   background-color: var(--background-color-primary);
+  height: 100%;
 }
 
 #main-title {
