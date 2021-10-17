@@ -166,7 +166,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: var(--background-color-primary);
-  height: 100%;
+  min-height: 100%;
 }
 
 #main-title {
