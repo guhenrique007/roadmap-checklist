@@ -20,7 +20,7 @@
         v-if="item.links"
         v-on:click="openLinks(item.links)"
       >
-        link
+      <LinkIcon/>
       </span>
     </div>
     <div class="sub-items" v-if="item.items">
@@ -52,8 +52,13 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const type = urlParams.get("type");
 
+import LinkIcon from './Buttons/LinkIcon.vue';
+
 export default {
   name: "Item",
+  components: {
+    LinkIcon,
+  },
   props: {
     item: Object,
     titleCard: String,
